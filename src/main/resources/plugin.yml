@@ -1,0 +1,5 @@
+name: BreakAll
+version: '${version}'
+main: io.github.fun2021.breakall.BreakAll
+api-version: 1.16
+authors: [ azurata ]
