@@ -49,8 +49,7 @@ public class BreakAllAPI {
         int blockY = block.getY();
         int blockZ = block.getZ();
 
-        Queue<Block> blockQueue = new ArrayDeque<>();
-        blockQueue.addAll(Arrays.asList(
+        Queue<Block> blockQueue = new ArrayDeque<>(Arrays.asList(
                 world.getBlockAt(blockX + 1, blockY, blockZ),
                 world.getBlockAt(blockX - 1, blockY, blockZ),
                 world.getBlockAt(blockX, blockY + 1, blockZ),
