@@ -32,7 +32,7 @@ public class BreakAllListener implements Listener {
                         // (blockType == BlockType.DIRT && itemType == ItemType.SHOVEL)
         ) {
             Set<Block> neighbors = api.getNeighbor(event.getBlock());
-            neighbors.forEach(b -> b.breakNaturally());
+            neighbors.forEach(Block::breakNaturally);
         }
     }
 }
