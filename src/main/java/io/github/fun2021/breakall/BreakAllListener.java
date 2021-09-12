@@ -33,7 +33,6 @@ public class BreakAllListener implements Listener {
         ) {
             Set<Block> neighbors = api.getNeighbor(event.getBlock());
             neighbors.forEach(b -> b.breakNaturally());
-            api.addDamageItem(mainHand, neighbors.size());
         }
     }
 }

@@ -79,10 +79,4 @@ public class BreakAllAPI {
         }
         return results;
     }
-
-    public void addDamageItem(ItemStack itemStack, int damage) {
-        Damageable meta = (Damageable) itemStack.getItemMeta();
-        meta.setDamage(meta.getDamage() + damage);
-        itemStack.setItemMeta((ItemMeta) meta);
-    }
 }
