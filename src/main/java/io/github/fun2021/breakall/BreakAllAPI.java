@@ -40,7 +40,7 @@ public class BreakAllAPI {
         }
     }
 
-    public Set<Block> searchNeighbor(Block block) {
+    public Set<Block> getNeighbor(Block block) {
         Set<Block> searched = new HashSet<>();
         Set<Block> results = new HashSet<>();
 

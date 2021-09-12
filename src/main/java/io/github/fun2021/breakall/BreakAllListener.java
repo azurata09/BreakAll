@@ -31,7 +31,7 @@ public class BreakAllListener implements Listener {
                         (blockType == BlockType.ORE && itemType == ItemType.PICKAXE)
                         // (blockType == BlockType.DIRT && itemType == ItemType.SHOVEL)
         ) {
-            Set<Block> neighbors = api.searchNeighbor(event.getBlock());
+            Set<Block> neighbors = api.getNeighbor(event.getBlock());
             neighbors.forEach(b -> b.breakNaturally());
             api.addDamageItem(mainHand, neighbors.size());
         }
