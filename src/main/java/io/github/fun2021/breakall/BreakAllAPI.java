@@ -53,7 +53,6 @@ public class BreakAllAPI {
         blockQueue.addAll(Arrays.asList(
                 world.getBlockAt(blockX + 1, blockY, blockZ),
                 world.getBlockAt(blockX - 1, blockY, blockZ),
-                world.getBlockAt(blockX - 1, blockY, blockZ),
                 world.getBlockAt(blockX, blockY + 1, blockZ),
                 world.getBlockAt(blockX, blockY - 1, blockZ),
                 world.getBlockAt(blockX, blockY, blockZ + 1),
@@ -72,7 +71,6 @@ public class BreakAllAPI {
             blockZ = block_.getZ();
             blockQueue.addAll(Arrays.asList(
                     world.getBlockAt(blockX + 1, blockY, blockZ),
-                    world.getBlockAt(blockX - 1, blockY, blockZ),
                     world.getBlockAt(blockX - 1, blockY, blockZ),
                     world.getBlockAt(blockX, blockY + 1, blockZ),
                     world.getBlockAt(blockX, blockY - 1, blockZ),
